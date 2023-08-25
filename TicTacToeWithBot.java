@@ -15,9 +15,14 @@ public class TicTacToe_2{
                               {' ', '|', ' ', '|', ' '},
                               {'-', '+', '-', '+', '-'},
                               {' ', '|', ' ', '|', ' '}};
-        printGameBoard(gameBoard);
         
-        while (true) {
+        printGameBoard(gameBoard);
+        checkPlacement(gameBoard);
+        
+    }
+    
+    public static void checkPlacement(char[][] gameBoard) {
+    	while (true) {
         	Scanner sc = new Scanner(System.in);
         	
         	// check player's placement
@@ -56,7 +61,6 @@ public class TicTacToe_2{
             }
             
         }
-        
     }
     
     public static void printGameBoard(char[][] gameBoard) {
