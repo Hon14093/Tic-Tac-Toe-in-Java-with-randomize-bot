@@ -46,7 +46,7 @@ public class TicTacToe_2{
             // check bot's placement
             Random random = new Random();
             int botPos = random.nextInt(9)+1;
-            while (playerPositions.contains(botPos) || botPositions.contains(botPositions)) {
+            while (playerPositions.contains(botPos) || botPositions.contains(botPos)) {
             	//System.out.println("bot bot");
             	botPos = random.nextInt(9)+1;
             }
